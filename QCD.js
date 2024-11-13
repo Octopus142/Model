@@ -9,7 +9,7 @@ class Quark {
     }
   }
   
-  class Gluon {
+class Gluon {
     constructor(color1, color2) {
       this.color1 = color1;
       this.color2 = color2;
@@ -20,7 +20,7 @@ class Quark {
     }
   }
   
-  class QCDSimulation {
+class QCDSimulation {
     constructor() {
       this.quarks = [];
       this.gluons = [];
@@ -28,14 +28,14 @@ class Quark {
       this.antiColors = ['anti-red', 'anti-green', 'anti-blue'];
     }
   
-    createQuark(flavor) {
+Quark(flavor) {
       const color = this.colors[Math.floor(Math.random() * this.colors.length)];
       const quark = new Quark(flavor, color);
       this.quarks.push(quark);
       return quark;
     }
   
-    createGluon() {
+Gluon() {
       const color1 = this.colors[Math.floor(Math.random() * this.colors.length)];
       const color2 = this.antiColors[Math.floor(Math.random() * this.antiColors.length)];
       const gluon = new Gluon(color1, color2);
@@ -43,15 +43,15 @@ class Quark {
       return gluon;
     }
   
-    simulateColorInteraction(quark1, quark2) {
-      const gluon = this.createGluon();
+simulateColorInteraction(quark1, quark2) {
+      const gluon = this.Gluon();
       console.log(`${quark1} interacts with ${quark2} via ${gluon}`);
     }
   
-    simulateConfinement() {
-      const quark1 = this.createQuark('up');
-      const quark2 = this.createQuark('down');
-      const quark3 = this.createQuark('strange');
+simulateConfinement() {
+      const quark1 = this.Quark('up');
+      const quark2 = this.Quark('down');
+      const quark3 = this.Quark('strange');
   
       console.log('Simulating confinement:');
       console.log(`Created: ${quark1}, ${quark2}, ${quark3}`);
