@@ -98,18 +98,13 @@ Module StandardModel
 
         Public Sub DisplayInfo()
             Console.WriteLine("Standard Model of Particle Physics")
-            Console.WriteLine("==================================")
-            Console.WriteLine()
-
             Console.WriteLine("Fundamental Particles:")
-            Console.WriteLine("----------------------")
             For Each particle In Particles
                 Console.WriteLine(particle)
             Next
             Console.WriteLine()
 
             Console.WriteLine("Fundamental Forces:")
-            Console.WriteLine("-------------------")
             For Each force In Forces
                 Console.WriteLine(force)
             Next
