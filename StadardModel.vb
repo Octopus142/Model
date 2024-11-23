@@ -115,7 +115,6 @@ Module StandardModel
         Dim model As New StandardModel()
         model.DisplayInfo()
 
-        Console.WriteLine()
         Console.WriteLine("Press any key to exit...")
         Console.ReadKey()
     End Sub
