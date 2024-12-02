@@ -1,6 +1,6 @@
 Imports System
 
-Module StandardModel
+Module Model
     Enum ParticleType
         Quark
         Lepton
