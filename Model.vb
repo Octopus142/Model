@@ -27,7 +27,6 @@ Module Model
         End Sub
 
         Public Overrides Function ToString() As String
-            Return $"{Name} (Type: {Type}, Charge: {Charge}, Mass: {Mass} GeV/c²)"
         End Function
     End Class
 
@@ -47,7 +46,6 @@ Module Model
         End Sub
 
         Public Overrides Function ToString() As String
-            Return $"{Name} Force (Type: {Type}, Relative Strength: {RelativeStrength}, Range: {Range}, Mediator: {Mediator.Name})"
         End Function
     End Class
 
@@ -97,8 +95,7 @@ Module Model
         End Sub
 
         Public Sub DisplayInfo()
-            Console.WriteLine("Standard Model of Particle Physics")
-            Console.WriteLine("Fundamental Particles:")
+                            
             For Each particle In Particles
                 Console.WriteLine(particle)
             Next
@@ -114,8 +111,7 @@ Module Model
     Sub Main()
         Dim model As New StandardModel()
         model.DisplayInfo()
-
-        Console.WriteLine("Press any key to exit...")
+                
         Console.ReadKey()
     End Sub
 End Module
